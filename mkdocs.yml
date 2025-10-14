@@ -15,34 +15,34 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: deep purple
       accent: pink
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: deep purple
       accent: pink
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Roboto, Arial, sans-serif
-    code: Roboto Mono, monospace
+    text: Inter
+    code: JetBrains Mono
   icon:
-    logo: material/python
+    logo: material/school
 nav:
-  - Home: docs/index.md
-  - Imposter Syndrome: docs/imposter-syndrome.md
-  - The Expert: docs/the-expert.md
-  - The Perfectionist: docs/the-perfectionist.md
-  - The Superperson: docs/the-superperson.md
-  - The Natural Genius: docs/the-natural-genius.md
-  - The Soloist: docs/the-soloist.md
-  - Key Takeaways: docs/key-takeaways.md
-  - Resources: docs/resources.md
-  - Contact Page: docs/contact.md
+  - Home: index.md
+  - Imposter Syndrome: imposter-syndrome.md
+  - The Expert: the-expert.md
+  - The Perfectionist: the-perfectionist.md
+  - The Superperson: the-superperson.md
+  - The Natural Genius: the-natural-genius.md
+  - The Soloist: the-soloist.md
+  - Key Takeaways: key-takeaways.md
+  - Resources: resources.md
+  - Contact Page: contact.md
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -50,4 +50,4 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://pythondiscord.com/
 extra_css:
-  - docs/stylesheets/extra.css
+  - stylesheets/extra.css
