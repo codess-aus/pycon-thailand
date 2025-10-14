@@ -19,10 +19,15 @@ Click **Save**
 
 **Settings → Pages → Build and deployment**
 
+⚠️ **IMPORTANT**: Choose the correct deployment method:
+
+**Option A: Deploy from Branch (RECOMMENDED for this setup)**
 - **Source**: Deploy from a branch
-- **Branch**: `gh-pages` / `root`
+- **Branch**: Select `gh-pages` and `/` (root)
 
 Click **Save**
+
+**Note**: The workflow pushes to the `gh-pages` branch, so this is the correct setting for our setup.
 
 ## 🔄 How It Works
 
