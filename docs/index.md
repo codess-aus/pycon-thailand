@@ -10,7 +10,7 @@ Explore the journey through Imposter Syndrome and out the other side! Discover y
 
 ## 📚 Chapters
 
-- [Imposter Syndrome](imposter-syndrome.md) - Understanding the doubts we all face
+- [Imposter Syndrome](imposter-syndrome.md) - That voice inside your head that holds you back from opportunity is not your friend!
 - [The Expert](the-expert.md) - You don't need to know everything
 - [The Perfectionist](the-perfectionist.md) - Progress over perfection
 - [The Superperson](the-superperson.md) - Balance is key

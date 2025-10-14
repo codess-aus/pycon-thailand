@@ -8,9 +8,17 @@ Imposter Syndrome is the feeling that you don't belong or aren't good enough, ev
 
 ## 💡 What is Imposter Syndrome?
 
-Imposter Syndrome is a psychological pattern where individuals doubt their accomplishments and fear being exposed as a "fraud." It can affect anyone, regardless of experience or skill level.
+Imposter Syndrome is is a psychological phenomenon where people doubt their skills, talents, or accomplishments and have a persistent fear of being exposed as frauds.  
 
-![Understanding Imposter Syndrome](assets/Picture2.png)
+It can affect anyone and they may experience anxiety, depression, low self-confidence, and frustration.  
+
+Often people attribute their success to luck, timing, or deceiving others, rather than their own abilities.  
+
+Now as I get older, I worry less about what other people think. But I still remember how hard it was earlier in my career to ask for help and how much it would have helped me if I had someone I could turn to without judgement.  
+[and by earlier in my career, I mean yesterday…]
+
+
+![Understanding Imposter Syndrome](assets/Imposter2.png)
 
 ---
 
