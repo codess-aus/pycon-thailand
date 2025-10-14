@@ -1,0 +1,53 @@
+site_name: "PyCon Thailand Workshop"
+theme:
+  name: material
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.integrate
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto, Arial, sans-serif
+    code: Roboto Mono, monospace
+  icon:
+    logo: material/python
+nav:
+  - Home: docs/index.md
+  - Imposter Syndrome: docs/imposter-syndrome.md
+  - The Expert: docs/the-expert.md
+  - The Perfectionist: docs/the-perfectionist.md
+  - The Superperson: docs/the-superperson.md
+  - The Natural Genius: docs/the-natural-genius.md
+  - The Soloist: docs/the-soloist.md
+  - Key Takeaways: docs/key-takeaways.md
+  - Resources: docs/resources.md
+  - Contact Page: docs/contact.md
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/PyConThailand
+    - icon: fontawesome/brands/discord
+      link: https://pythondiscord.com/
+extra_css:
+  - docs/stylesheets/extra.css

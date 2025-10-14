@@ -1,0 +1,52 @@
+:root {
+    --md-text-font-size: 1.1rem;
+    --md-typeset-line-height: 1.8;
+    --md-text-color: #222;
+    --md-accent-fg-color: #e91e63;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-text-color: #eee;
+    --md-accent-fg-color: #ff4081;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+    font-weight: 700;
+    color: var(--md-accent-fg-color);
+}
+
+.md-typeset code {
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+:focus-visible {
+    outline: 3px solid #e91e63;
+    outline-offset: 2px;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--md-accent-fg-color);
+}
+
+a:hover {
+    color: #ad1457;
+}
+
+@media (max-width: 600px) {
+    .md-typeset h1 {
+        font-size: 2rem;
+    }
+    .md-typeset h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (forced-colors: active) {
+    :root {
+        --md-text-color: WindowText;
+        --md-accent-fg-color: Highlight;
+    }
+}
