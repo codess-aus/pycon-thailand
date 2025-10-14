@@ -144,16 +144,44 @@ a:hover {
     font-weight: 600;
 }
 
-/* Image styling */
+/* Image styling - Responsive and accessible */
 .md-typeset img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 1.5rem auto;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(139, 92, 246, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Standard content images - 60% width for better readability */
+.md-typeset p img,
+.md-typeset h2 + p img,
+.md-typeset h3 + p img {
+    max-width: 60%;
+    min-width: 300px;
+}
+
+/* Hero images (first image after h1) - larger display */
+.md-typeset h1 + p img {
+    max-width: 80%;
+}
+
 .md-typeset img:hover {
     transform: scale(1.02);
     box-shadow: 0 8px 30px rgba(139, 92, 246, 0.3);
+}
+
+/* Ensure images don't break layout on small screens */
+@media (max-width: 768px) {
+    .md-typeset img,
+    .md-typeset p img,
+    .md-typeset h1 + p img {
+        max-width: 100% !important;
+        min-width: 100px;
+    }
 }
 
 /* Content area gradient accent */

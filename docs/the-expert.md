@@ -2,7 +2,7 @@
 
 ![The Expert](assets/expert.jpg)
 
-The Expert feels they must know everything about Python and answer every question. This mindset can lead to stress and burnout.
+The Expert feels they must know everything - Python, Devops, Infrastructure as Code, Testing, Security - and be able to answer every question on any topic. This mindset can lead to stress and burnout.
 
 ---
 

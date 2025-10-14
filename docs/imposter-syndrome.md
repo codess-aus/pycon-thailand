@@ -18,7 +18,7 @@ Now as I get older, I worry less about what other people think. But I still reme
 [and by earlier in my career, I mean yesterday…]
 
 
-![Understanding Imposter Syndrome](assets/Imposter2.png)
+![Understanding Imposter Syndrome](assets/Imposter2.jpg)
 
 ---
 
