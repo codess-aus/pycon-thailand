@@ -164,9 +164,10 @@ a:hover {
     min-width: 300px;
 }
 
-/* Hero images (first image after h1) - larger display */
+/* Hero images (first image after h1) - smaller, more contained */
 .md-typeset h1 + p img {
-    max-width: 80%;
+    max-width: 40%;
+    min-width: 250px;
 }
 
 .md-typeset img:hover {
