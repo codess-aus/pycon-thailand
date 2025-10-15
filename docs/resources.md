@@ -1,29 +1,21 @@
 # 📚 Resources
 
-![Resources](assets/Picture6.png)
+![Resources](assets/Copilot reading.png)
 
-## 🌐 Python Community
+## 🌐 GitHub Copilot
 
-- **[PyCon Thailand](https://th.pycon.org/)** - Join us at the conference!
-- **[Python.org](https://www.python.org/)** - Official Python documentation
-- **[Python Discord](https://pythondiscord.com/)** - Active community with thousands of members
-
----
-
-## 📖 Learning Resources
-
-- **[Real Python](https://realpython.com/)** - In-depth tutorials and articles
-- **[Talk Python](https://talkpython.fm/)** - Podcast covering Python topics
-- **[Python Weekly](https://www.pythonweekly.com/)** - Newsletter with curated content
-- **[Awesome Python](https://awesome-python.com/)** - Curated list of Python frameworks and libraries
+- **[GitHub Copilot Fundamentals Part 1](https://learn.microsoft.com/en-us/training/paths/copilot/)** - Explore the fundamentals of GitHub Copilot and its potential to enhance productivity and foster innovation for both individual developers and businesses. Discover how to implement it within your organization and unleash its power for your own projects.  
+- **[GitHub Copilot Fundamentals Part 2](https://learn.microsoft.com/en-us/training/paths/gh-copilot-2/)** - Continue the path and learn advanced functionalities of GitHub Copilot and how to best use them
+- **[Microsoft Applied Skills: Accelerate app development by using GitHub Copilot](https://learn.microsoft.com/en-us/credentials/applied-skills/accelerate-app-development-by-using-github-copilot/)** - To earn this Microsoft Applied Skills credential, learners demonstrate the ability to Accelerate app development by using GitHub Copilot. Candidates for this credential should have familiarity with Visual Studio Code and GitHub, and should have experience developing apps by using C# (boo)
+- **[GitHub Copilot Certification](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/?practice-assessment-type=certification)** - This exam is designed for individuals in the field of software development who are proficient in using GitHub, including software developers, administrators, and project managers. This certification is intended for individuals who have a foundational understanding of GitHub Copilot as a product and its available features, along with hands-on experience in optimizing software development workflows using GitHub Copilot. Once achieved, the certification will be valid for two years.  
+- **[GitHub Copilot Docs](https://docs.github.com/en/copilot/how-tos)**  
 
 ---
 
-## 💡 Imposter Syndrome Resources
+## 📖 Imposter Syndrome Resources
 
-- **[The Secret Thoughts of Successful Women](https://www.valariekyoung.com/)** - Valarie Young's book on imposter syndrome
-- **[Feel Like a Fraud?](https://www.apa.org/gradpsych/2013/11/fraud)** - APA article on imposter syndrome
-- **[Impostor Syndrome at Work](https://hbr.org/2008/05/overcoming-imposter-syndrome)** - Harvard Business Review
+- **[The Imposters Handbook](https://github.com/imposters-handbook)** - Code and resources for the book.
+- **[Growth Mindset](https://youtu.be/-71zdXCMU6A?si=x58bSEfg9gYoFIxf)**
 
 ---
 
