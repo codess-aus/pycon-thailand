@@ -156,16 +156,16 @@ a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Standard content images - 60% width for better readability */
+/* Hero images (first image after h1) - smaller, more contained */
+.md-typeset h1 + p img {
+    max-width: 40%;
+    min-width: 250px;
+}
+
+/* Standard content images - same size as hero images for consistency */
 .md-typeset p img,
 .md-typeset h2 + p img,
 .md-typeset h3 + p img {
-    max-width: 60%;
-    min-width: 300px;
-}
-
-/* Hero images (first image after h1) - smaller, more contained */
-.md-typeset h1 + p img {
     max-width: 40%;
     min-width: 250px;
 }

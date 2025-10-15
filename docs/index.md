@@ -1,8 +1,7 @@
-# 👋 Welcome to my PyCon Thailand Workshop
+# 👋 Welcome to my PyCon Thailand Workshop  
+**By Michelle Sandford From Microsoft Asia**  
 
 ![PyCon Thailand](assets/PyconThailand.png)
-
-**By Michelle Sandford From Microsoft Asia**
 
 Explore the journey through Imposter Syndrome and out the other side! Discover your strengths as a Pythonista. Navigate each chapter to learn, reflect, and grow!
 

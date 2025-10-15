@@ -24,7 +24,7 @@ Connect with fellow Pythonistas:
 
 ## 🙏 Thank You!
 
-Thank you for joining the **No Turning Back** workshop at PyCon Thailand!
+Thank you for joining the **Overcome Your Imposter Syndrome with GitHub Copilot** workshop at PyCon Thailand!
 
 Remember: You are capable, you are learning, and you belong in this community.
 
