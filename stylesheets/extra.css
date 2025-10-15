@@ -170,6 +170,14 @@ a:hover {
     min-width: 250px;
 }
 
+/* GIF images - full width for better visibility of animations */
+.md-typeset img[src$=".gif"],
+.md-typeset img[src*=".gif"] {
+    max-width: 100% !important;
+    min-width: auto;
+    width: 100%;
+}
+
 .md-typeset img:hover {
     transform: scale(1.02);
     box-shadow: 0 8px 30px rgba(139, 92, 246, 0.3);
