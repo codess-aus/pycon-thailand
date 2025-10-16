@@ -721,18 +721,20 @@ def compute_totals(items: List[Dict[str, Any]]) -&gt; Dict[str, Any]:
 <p>Single computation of line_total.  </p>
 </li>
 <li>
-<p>Agent Mode Prompt: “Introduce a pricing module:</p>
-</li>
-<li>
-<p>Split compute_totals into: parse_items(), aggregate_by_category(), compute_totals()</p>
-</li>
+<p>Agent Mode Prompt: “Introduce a pricing module:”</p>
+<ul>
+<li>Split compute_totals into: parse_items(), aggregate_by_category(), compute_totals()</li>
 <li>Add unit tests (pytest) covering edge cases: missing keys, zero qty, large price</li>
 <li>Add README snippet documenting currency handling</li>
-<li>Ensure no external dependencies besides stdlib + pytest.” The Agent could:</li>
+<li>Ensure no external dependencies besides stdlib + pytest. The Agent could:<ul>
 <li>Create pricing/<strong>init</strong>.py</li>
 <li>Add pricing/aggregate.py</li>
 <li>Write tests in tests/test_pricing.py</li>
 <li>Update README.md with usage example.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h4 id="interesting-fact-multi-step-agents-often-internally-chain-multiple-edit-like-operations-conceptually-they-reuse-reasoning-loops-youd-manually-perform">Interesting Fact: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.</h4>
 <h2 id="to-overcome-imposter-syndrome-expert-style-embrace-a-growth-mindset">🌱 To overcome Imposter Syndrome Expert-Style embrace a Growth Mindset</h2>
