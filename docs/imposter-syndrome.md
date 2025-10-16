@@ -26,9 +26,10 @@ Now as I get older, I worry less about what other people think. But I still reme
 
 - **Recognize your achievements** - Keep a success journal
 - **Talk to peers and mentors** - Share your feelings openly
-- **Celebrate small wins** - Every step forward matters
+- **Celebrate small wins** - Keep a Happiness Jar. Each time something good happens put a keepsake in the jar, or write a note on a brightly coloured postit. I save stickers, tickets, ribbons, buttons, pins, badges - all sorts of little memories.
 - **Remember: You are not alone!** - This affects up to 70% of people
 
+![Happiness Jar](assets/happiness.jpg)
 ---
 
 ## ➡️ Next: [The Expert](the-expert.md)
