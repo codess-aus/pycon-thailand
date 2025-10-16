@@ -129,16 +129,15 @@ def compute_totals(items: List[Dict[str, Any]]) -> Dict[str, Any]:
 - defaultdict simplifies accumulation.
 - Single computation of line_total.  
 
-3. Agent Mode Prompt: “Introduce a pricing module:
-
-- Split compute_totals into: parse_items(), aggregate_by_category(), compute_totals()
-- Add unit tests (pytest) covering edge cases: missing keys, zero qty, large price
-- Add README snippet documenting currency handling
-- Ensure no external dependencies besides stdlib + pytest.” The Agent could:
-- Create pricing/__init__.py
-- Add pricing/aggregate.py
-- Write tests in tests/test_pricing.py
-- Update README.md with usage example.
+3. Agent Mode Prompt: “Introduce a pricing module:”
+    - Split compute_totals into: parse_items(), aggregate_by_category(), compute_totals()
+    - Add unit tests (pytest) covering edge cases: missing keys, zero qty, large price
+    - Add README snippet documenting currency handling
+    - Ensure no external dependencies besides stdlib + pytest. The Agent could:
+        - Create pricing/__init__.py
+        - Add pricing/aggregate.py
+        - Write tests in tests/test_pricing.py
+        - Update README.md with usage example.
 
 #### Interesting Fact: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.  
 
