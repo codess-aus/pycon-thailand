@@ -38,25 +38,27 @@ If you are a Senior Architect - you can see the whole project in your mind (or y
 
 ### Capabilities & Constraints  
 
-1. **Ask Mode**
-  - Pulls lightweight context: the current file, selection, maybe related symbols.  
-  - Does NOT alter files directly.  
-  - Great for: learning, quick utility snippets, performance/complexity questions, API lookups.  
-  - Safe sandbox for exploratory thinking.
-2. **Edit Mode**  
-  - You highlight code (or invoke at file scope), give an imperative instruction: “Optimize this loop,” “Convert to async,” “Add docstrings.”
-  - Generates a diff you can accept, partially apply, or reject.
-  - Promotes incremental, reviewable change.
-  - Encourages clarity: best prompts are specific about constraints (e.g., “Keep public API the same; improve readability; no external deps”).  
-3. **Agent Mode**
-  - Accepts a goal like: “Add JWT auth including middleware, tests, and docs.”
-  - Can:
-    - Inspect multiple files.
-    - Create new modules.  
-    - Chain reasoning (“Need config loader → create file → update imports → add tests”).  
-  - Sometimes prepare a PR-ready branch (depending on environment).
-  - Best when the task has multiple dependent steps or requires repository-wide awareness.
-  - Requires trust but verify: always review each step—especially security-sensitive code.  
+- **Ask Mode**
+    - Pulls lightweight context: the current file, selection, maybe related symbols.  
+    - Does NOT alter files directly.  
+    - Great for: learning, quick utility snippets, performance/complexity questions, API lookups.  
+    - Safe sandbox for exploratory thinking.
+
+- **Edit Mode**  
+    - You highlight code (or invoke at file scope), give an imperative instruction: “Optimize this loop,” “Convert to async,” “Add docstrings.”
+    - Generates a diff you can accept, partially apply, or reject.
+    - Promotes incremental, reviewable change.
+    - Encourages clarity: best prompts are specific about constraints (e.g., “Keep public API the same; improve readability; no external deps”).  
+
+- **Agent Mode**
+    - Accepts a goal like: “Add JWT auth including middleware, tests, and docs.”
+    - Can:
+        - Inspect multiple files.
+        - Create new modules.  
+        - Chain reasoning (“Need config loader → create file → update imports → add tests”).  
+    - Sometimes prepare a PR-ready branch (depending on environment).
+    - Best when the task has multiple dependent steps or requires repository-wide awareness.
+    - Requires trust but verify: always review each step—especially security-sensitive code.  
 
 ### Example Scenario (Python)  
 Suppose you have this (deliberately naive) function:  
