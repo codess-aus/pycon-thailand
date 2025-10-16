@@ -178,6 +178,18 @@ a:hover {
     width: 100%;
 }
 
+/* Small images - for images that need to be constrained to specific size */
+.md-typeset .small-image {
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.md-typeset .small-image img {
+    max-width: 400px !important;
+    width: 100%;
+    height: auto;
+}
+
 .md-typeset img:hover {
     transform: scale(1.02);
     box-shadow: 0 8px 30px rgba(139, 92, 246, 0.3);
