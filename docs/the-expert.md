@@ -38,22 +38,22 @@ If you are a Senior Architect - you can see the whole project in your mind (or y
 
 ### Capabilities & Constraints  
 
-- **Ask Mode**
+1. **Ask Mode**
   - Pulls lightweight context: the current file, selection, maybe related symbols.  
   - Does NOT alter files directly.  
   - Great for: learning, quick utility snippets, performance/complexity questions, API lookups.  
   - Safe sandbox for exploratory thinking.
-- **Edit Mode**  
+2. **Edit Mode**  
   - You highlight code (or invoke at file scope), give an imperative instruction: “Optimize this loop,” “Convert to async,” “Add docstrings.”
   - Generates a diff you can accept, partially apply, or reject.
   - Promotes incremental, reviewable change.
   - Encourages clarity: best prompts are specific about constraints (e.g., “Keep public API the same; improve readability; no external deps”).  
-- **Agent Mode**
+3. **Agent Mode**
   - Accepts a goal like: “Add JWT auth including middleware, tests, and docs.”
   - Can:
     - Inspect multiple files.
     - Create new modules.  
-  - Chain reasoning (“Need config loader → create file → update imports → add tests”).  
+    - Chain reasoning (“Need config loader → create file → update imports → add tests”).  
   - Sometimes prepare a PR-ready branch (depending on environment).
   - Best when the task has multiple dependent steps or requires repository-wide awareness.
   - Requires trust but verify: always review each step—especially security-sensitive code.  
@@ -138,9 +138,8 @@ def compute_totals(items: List[Dict[str, Any]]) -> Dict[str, Any]:
 - Write tests in tests/test_pricing.py
 - Update README.md with usage example.
 
-*Interesting Fact*: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.  
----
----
+#### Interesting Fact: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.  
+
 
 ## 🌱 To overcome Imposter Syndrome Expert-Style embrace a Growth Mindset  
 
