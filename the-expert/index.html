@@ -373,19 +373,25 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="How You’d Use Each Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interesting-fact-multi-step-agents-often-internally-chain-multiple-edit-like-operations-conceptually-they-reuse-reasoning-loops-youd-manually-perform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interesting Fact: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.
+    </span>
+  </a>
+  
 </li>
         
       </ul>
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#interesting-fact-multi-step-agents-often-internally-chain-multiple-edit-like-operations-conceptually-they-reuse-reasoning-loops-youd-manually-perform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interesting Fact: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -610,7 +616,7 @@
 <li><strong>Agent Mode</strong> = Delegated Workflow. You define a goal; Copilot plans steps, performs them iteratively, and summarizes progress.</li>
 </ul>
 <h3 id="capabilities-constraints">Capabilities &amp; Constraints</h3>
-<ul>
+<ol>
 <li><strong>Ask Mode</strong></li>
 <li>Pulls lightweight context: the current file, selection, maybe related symbols.  </li>
 <li>Does NOT alter files directly.  </li>
@@ -626,13 +632,13 @@
 <li>Can:<ul>
 <li>Inspect multiple files.</li>
 <li>Create new modules.  </li>
+<li>Chain reasoning (“Need config loader → create file → update imports → add tests”).  </li>
 </ul>
 </li>
-<li>Chain reasoning (“Need config loader → create file → update imports → add tests”).  </li>
 <li>Sometimes prepare a PR-ready branch (depending on environment).</li>
 <li>Best when the task has multiple dependent steps or requires repository-wide awareness.</li>
 <li>Requires trust but verify: always review each step—especially security-sensitive code.  </li>
-</ul>
+</ol>
 <h3 id="example-scenario-python">Example Scenario (Python)</h3>
 <p>Suppose you have this (deliberately naive) function:  </p>
 <pre><code>def compute_totals(items):
@@ -716,8 +722,7 @@ def compute_totals(items: List[Dict[str, Any]]) -&gt; Dict[str, Any]:
 <li>Write tests in tests/test_pricing.py</li>
 <li>Update README.md with usage example.</li>
 </ul>
-<h2 id="interesting-fact-multi-step-agents-often-internally-chain-multiple-edit-like-operations-conceptually-they-reuse-reasoning-loops-youd-manually-perform"><em>Interesting Fact</em>: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.</h2>
-<hr />
+<h4 id="interesting-fact-multi-step-agents-often-internally-chain-multiple-edit-like-operations-conceptually-they-reuse-reasoning-loops-youd-manually-perform">Interesting Fact: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.</h4>
 <h2 id="to-overcome-imposter-syndrome-expert-style-embrace-a-growth-mindset">🌱 To overcome Imposter Syndrome Expert-Style embrace a Growth Mindset</h2>
 <ul>
 <li><strong>Embrace learning as a journey</strong> - There's always something new to discover</li>
