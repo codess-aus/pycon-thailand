@@ -1,5 +1,7 @@
 # PyCon Thailand Workshop Website
 
+Go directly to the website for this content here: https://codess-aus.github.io/pycon-thailand/
+
 This repository contains the source code and content for the PyCon Thailand workshop website, built with MkDocs Material.
 
 ## Features
