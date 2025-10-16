@@ -339,9 +339,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#if-you-are-a-senior-architect-you-can-see-the-whole-project-in-your-mind-or-your-docs-and-you-can-acurately-describe-what-you-want-or-have-written-the-architecture-file-for-the-repo-and-know-how-to-guide-an-agent-back-to-the-main-track-when-it-goes-down-a-rabbit-hole-then-you-will-find-agent-mode-a-tremendous-tool-but-do-not-use-this-if-you-are-a-beginner-because-you-will-never-learn-to-code-properly-never-understand-the-fundamentals-never-have-the-skills-to-survive-in-this-field-if-you-skip-straight-to-agent-mode-and-let-it-code-for-you" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      If you are a Senior Architect - you can see the whole project in your mind (or your docs) and you can acurately describe what you want - or have written the architecture file for the repo and know how to guide an Agent back to the main track when it goes down a rabbit hole, then you will find Agent Mode a tremendous tool... but DO NOT USE THIS if you are a beginner, because you will never learn to code properly, never understand the fundamentals, never have the skills to survive in this field, if you skip straight to Agent Mode and let it code for you.
     </span>
   </a>
   
@@ -351,6 +351,57 @@
   <a href="#growth-mindset" class="md-nav__link">
     <span class="md-ellipsis">
       🌱 Growth Mindset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌱 Growth Mindset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mental-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mental Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capabilities-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Capabilities &amp; Constraints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-scenario-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenario (Python)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-youd-use-each-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      How You’d Use Each Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interesting-fact-multi-step-agents-often-internally-chain-multiple-edit-like-operations-conceptually-they-reuse-reasoning-loops-youd-manually-perform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interesting Fact: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.
     </span>
   </a>
   
@@ -556,7 +607,10 @@
 <p>The words you choose in your prompt can also frame what the output will look like - so this explanation is quite verbose, but also there is some assumed level of education in there. I could reframe the question asking it to explain it to me like I'm 5 years old. Or to put it in a fun way. Or - to explain it as if I needed to justify this code block to a senior technical decision maker - so it would give me the right words to defend my code if I need to.</p>
 <p>You can ask your questions in the context of the file you have open, the lines you have highlighted, the whole repository, a specific folder.  </p>
 <p>I want all the images in this repository to be styled consistently, responsively and accessibly - so I might ask it to check my code and confirm the way I have written it meets those standards, and if it doesn't - explain to me how I can rewrite it so it does that.</p>
-<h2 id="_1"><img alt="Explain it to me" src="../assets/ExpertGif.gif" /></h2>
+<p><img alt="Explain it to me" src="../assets/ExpertGif.gif" /></p>
+<p>If you are having doubts about your skills as a developer, I strongly recommend you use GitHub Copilot in Ask Mode. That allows you to use it like a coach, a teacher, a trainer - but one that will never get tired of your endless questions. One that is always patient, and can keep going until you feel really confident you understand. </p>
+<p>If you are a more senior dev, you will probably find Edit Mode to be a great enabler. It will help you write the code your were going to write anyway, but faster. It will quickly fill in the boilerplate code for you, acurately predicting what you want from your comments, or even from you starting to type something.  </p>
+<h2 id="if-you-are-a-senior-architect-you-can-see-the-whole-project-in-your-mind-or-your-docs-and-you-can-acurately-describe-what-you-want-or-have-written-the-architecture-file-for-the-repo-and-know-how-to-guide-an-agent-back-to-the-main-track-when-it-goes-down-a-rabbit-hole-then-you-will-find-agent-mode-a-tremendous-tool-but-do-not-use-this-if-you-are-a-beginner-because-you-will-never-learn-to-code-properly-never-understand-the-fundamentals-never-have-the-skills-to-survive-in-this-field-if-you-skip-straight-to-agent-mode-and-let-it-code-for-you">If you are a Senior Architect - you can see the whole project in your mind (or your docs) and you can acurately describe what you want - or have written the architecture file for the repo and know how to guide an Agent back to the main track when it goes down a rabbit hole, then you will find Agent Mode a tremendous tool... but DO NOT USE THIS if you are a beginner, because you will never learn to code properly, never understand the fundamentals, never have the skills to survive in this field, if you skip straight to Agent Mode and let it code for you.</h2>
 <h2 id="growth-mindset">🌱 Growth Mindset</h2>
 <ul>
 <li><strong>Embrace learning as a journey</strong> - There's always something new to discover</li>
@@ -565,7 +619,120 @@
 <li><strong>It's okay to say "I don't know"</strong> - Then add "but let's find out together"</li>
 </ul>
 <p><img alt="Copilot as a Learning Tool" src="../assets/Copilot%20reading.png" /></p>
-<hr />
+<h3 id="mental-models">Mental Models</h3>
+<ul>
+<li><strong>Ask Mode</strong> = Conversation. Copilot is your “pair programmer who explains and brainstorms.”  </li>
+<li><strong>Edit Mode</strong> = Controlled Rewrite. You hand Copilot a patch of code and say “transform this with constraint X.”  </li>
+<li><strong>Agent Mode</strong> = Delegated Workflow. You define a goal; Copilot plans steps, performs them iteratively, and summarizes progress.</li>
+</ul>
+<h3 id="capabilities-constraints">Capabilities &amp; Constraints</h3>
+<ul>
+<li><strong>Ask Mode</strong></li>
+<li>Pulls lightweight context: the current file, selection, maybe related symbols.  </li>
+<li>Does NOT alter files directly.  </li>
+<li>Great for: learning, quick utility snippets, performance/complexity questions, API lookups.  </li>
+<li>Safe sandbox for exploratory thinking.</li>
+<li><strong>Edit Mode</strong>  </li>
+<li>You highlight code (or invoke at file scope), give an imperative instruction: “Optimize this loop,” “Convert to async,” “Add docstrings.”</li>
+<li>Generates a diff you can accept, partially apply, or reject.</li>
+<li>Promotes incremental, reviewable change.</li>
+<li>Encourages clarity: best prompts are specific about constraints (e.g., “Keep public API the same; improve readability; no external deps”).  </li>
+<li><strong>Agent Mode</strong></li>
+<li>Accepts a goal like: “Add JWT auth including middleware, tests, and docs.”</li>
+<li>Can:<ul>
+<li>Inspect multiple files.</li>
+<li>Create new modules.  </li>
+</ul>
+</li>
+<li>Chain reasoning (“Need config loader → create file → update imports → add tests”).  </li>
+<li>Sometimes prepare a PR-ready branch (depending on environment).</li>
+<li>Best when the task has multiple dependent steps or requires repository-wide awareness.</li>
+<li>Requires trust but verify: always review each step—especially security-sensitive code.  </li>
+</ul>
+<h3 id="example-scenario-python">Example Scenario (Python)</h3>
+<p>Suppose you have this (deliberately naive) function:  </p>
+<pre><code>def compute_totals(items):
+    # items: list of dicts like {&quot;price&quot;: 10.0, &quot;qty&quot;: 2, &quot;category&quot;: &quot;book&quot;}
+    subtotal = 0
+    cat_map = {}
+    for it in items:
+        if &quot;price&quot; not in it or &quot;qty&quot; not in it:
+            continue
+        subtotal += it[&quot;price&quot;] * it[&quot;qty&quot;]
+        c = it.get(&quot;category&quot;, &quot;uncategorized&quot;)
+        if c not in cat_map:
+            cat_map[c] = 0
+        cat_map[c] += it[&quot;price&quot;] * it[&quot;qty&quot;]
+    tax = subtotal * 0.0825
+    grand = subtotal + tax
+    return {
+        &quot;subtotal&quot;: subtotal,
+        &quot;tax&quot;: tax,
+        &quot;grand_total&quot;: grand,
+        &quot;by_category&quot;: cat_map
+    }
+</code></pre>
+<h3 id="how-youd-use-each-mode">How You’d Use Each Mode</h3>
+<ol>
+<li>
+<p>Ask Mode Prompt: “Explain time complexity of compute_totals and suggest micro-optimizations - don’t change semantics.” Output: Explanation + maybe suggestion to use defaultdict, avoid duplicated multiplication, consider Decimal for currency.</p>
+</li>
+<li>
+<p>Edit Mode Prompt (select the function): “Refactor for readability, use type hints, minimize repeated multiplication, and use Decimal (assume 2-decimal currency).” Possible Result (diff style):  </p>
+</li>
+</ol>
+<pre><code>from decimal import Decimal, ROUND_HALF_UP
+from collections import defaultdict
+from typing import List, Dict, Any
+
+def compute_totals(items: List[Dict[str, Any]]) -&gt; Dict[str, Any]:
+    subtotal = Decimal(&quot;0.00&quot;)
+    by_category: Dict[str, Decimal] = defaultdict(lambda: Decimal(&quot;0.00&quot;))
+
+    for it in items:
+        try:
+            price = Decimal(str(it[&quot;price&quot;]))
+            qty = Decimal(str(it[&quot;qty&quot;]))
+        except KeyError:
+            continue
+        line_total = price * qty
+        subtotal += line_total
+        category = it.get(&quot;category&quot;, &quot;uncategorized&quot;)
+        by_category[category] += line_total
+
+    tax_rate = Decimal(&quot;0.0825&quot;)
+    tax = (subtotal * tax_rate).quantize(Decimal(&quot;0.01&quot;), rounding=ROUND_HALF_UP)
+    grand = (subtotal + tax).quantize(Decimal(&quot;0.01&quot;), rounding=ROUND_HALF_UP)
+
+    return {
+        &quot;subtotal&quot;: str(subtotal),
+        &quot;tax&quot;: str(tax),
+        &quot;grand_total&quot;: str(grand),
+        &quot;by_category&quot;: {k: str(v) for k, v in by_category.items()}
+    }
+</code></pre>
+<p><strong>Commentary:</strong></p>
+<ul>
+<li>Converted to Decimal for currency correctness (float can accumulate rounding error).</li>
+<li>defaultdict simplifies accumulation.</li>
+<li>
+<p>Single computation of line_total.  </p>
+</li>
+<li>
+<p>Agent Mode Prompt: “Introduce a pricing module:</p>
+</li>
+<li>
+<p>Split compute_totals into: parse_items(), aggregate_by_category(), compute_totals()</p>
+</li>
+<li>Add unit tests (pytest) covering edge cases: missing keys, zero qty, large price</li>
+<li>Add README snippet documenting currency handling</li>
+<li>Ensure no external dependencies besides stdlib + pytest.” The Agent could:</li>
+<li>Create pricing/<strong>init</strong>.py</li>
+<li>Add pricing/aggregate.py</li>
+<li>Write tests in tests/test_pricing.py</li>
+<li>Update README.md with usage example.</li>
+</ul>
+<h2 id="interesting-fact-multi-step-agents-often-internally-chain-multiple-edit-like-operations-conceptually-they-reuse-reasoning-loops-youd-manually-perform"><em>Interesting Fact</em>: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.</h2>
 <h2 id="next-the-perfectionist">➡️ Next: <a href="../the-perfectionist/">The Perfectionist</a></h2>
 
 
