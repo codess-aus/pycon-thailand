@@ -27,23 +27,17 @@ If you are having doubts about your skills as a developer, I strongly recommend 
 If you are a more senior dev, you will probably find Edit Mode to be a great enabler. It will help you write the code your were going to write anyway, but faster. It will quickly fill in the boilerplate code for you, acurately predicting what you want from your comments, or even from you starting to type something.  
 
 If you are a Senior Architect - you can see the whole project in your mind (or your docs) and you can acurately describe what you want - or have written the architecture file for the repo and know how to guide an Agent back to the main track when it goes down a rabbit hole, then you will find Agent Mode a tremendous tool... but DO NOT USE THIS if you are a beginner, because you will never learn to code properly, never understand the fundamentals, never have the skills to survive in this field, if you skip straight to Agent Mode and let it code for you.  
----
-
-## 🌱 Growth Mindset
-
-- **Embrace learning as a journey** - There's always something new to discover
-- **Ask questions and seek help** - It's a sign of strength, not weakness
-- **Share knowledge with others** - Teaching reinforces your own learning
-- **It's okay to say "I don't know"** - Then add "but let's find out together"
 
 ![Copilot as a Learning Tool](assets/Copilot%20reading.png)
 
-### Mental Models
+### Mental Models  
+
 - **Ask Mode** = Conversation. Copilot is your “pair programmer who explains and brainstorms.”  
 - **Edit Mode** = Controlled Rewrite. You hand Copilot a patch of code and say “transform this with constraint X.”  
 - **Agent Mode** = Delegated Workflow. You define a goal; Copilot plans steps, performs them iteratively, and summarizes progress.
 
-### Capabilities & Constraints
+### Capabilities & Constraints  
+
 - **Ask Mode**
   - Pulls lightweight context: the current file, selection, maybe related symbols.  
   - Does NOT alter files directly.  
@@ -90,8 +84,9 @@ def compute_totals(items):
     }
 ```  
 
-### How You’d Use Each Mode
-1. Ask Mode Prompt: “Explain time complexity of compute_totals and suggest micro-optimizations - don’t change semantics.” Output: Explanation + maybe suggestion to use defaultdict, avoid duplicated multiplication, consider Decimal for currency.
+### How You’d Use Each Mode  
+
+1. Ask Mode Prompt: “Explain time complexity of compute_totals and suggest micro-optimizations - don’t change semantics.” Output: Explanation + maybe suggestion to use defaultdict, avoid duplicated multiplication, consider Decimal for currency.  
 
 2. Edit Mode Prompt (select the function): “Refactor for readability, use type hints, minimize repeated multiplication, and use Decimal (assume 2-decimal currency).” Possible Result (diff style):  
 
@@ -145,5 +140,15 @@ def compute_totals(items: List[Dict[str, Any]]) -> Dict[str, Any]:
 
 *Interesting Fact*: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.  
 ---
+---
+
+## 🌱 To overcome Imposter Syndrome Expert-Style embrace a Growth Mindset  
+
+- **Embrace learning as a journey** - There's always something new to discover
+- **Ask questions and seek help** - It's a sign of strength, not weakness
+- **Share knowledge with others** - Teaching reinforces your own learning
+- **It's okay to say "I don't know"** - Then add "but let's find out together"
+
+
 
 ## ➡️ Next: [The Perfectionist](the-perfectionist.md)
