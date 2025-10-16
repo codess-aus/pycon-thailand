@@ -680,45 +680,43 @@
 <p>Ask Mode Prompt: “Explain time complexity of compute_totals and suggest micro-optimizations - don’t change semantics.” Output: Explanation + maybe suggestion to use defaultdict, avoid duplicated multiplication, consider Decimal for currency.  </p>
 </li>
 <li>
-<p>Edit Mode Prompt (select the function): “Refactor for readability, use type hints, minimize repeated multiplication, and use Decimal (assume 2-decimal currency).” Possible Result (diff style):  </p>
-</li>
-</ol>
-<pre><code>from decimal import Decimal, ROUND_HALF_UP
-from collections import defaultdict
-from typing import List, Dict, Any
+<p>Edit Mode Prompt (select the function): “Refactor for readability, use type hints, minimize repeated multiplication, and use Decimal (assume 2-decimal currency).” Possible Result (diff style):<br />
+    ```
+    from decimal import Decimal, ROUND_HALF_UP
+    from collections import defaultdict
+    from typing import List, Dict, Any</p>
+<p>def compute_totals(items: List[Dict[str, Any]]) -&gt; Dict[str, Any]:
+    subtotal = Decimal("0.00")
+    by_category: Dict[str, Decimal] = defaultdict(lambda: Decimal("0.00"))</p>
+<pre><code>for it in items:
+    try:
+        price = Decimal(str(it["price"]))
+        qty = Decimal(str(it["qty"]))
+    except KeyError:
+        continue
+    line_total = price * qty
+    subtotal += line_total
+    category = it.get("category", "uncategorized")
+    by_category[category] += line_total
 
-def compute_totals(items: List[Dict[str, Any]]) -&gt; Dict[str, Any]:
-    subtotal = Decimal(&quot;0.00&quot;)
-    by_category: Dict[str, Decimal] = defaultdict(lambda: Decimal(&quot;0.00&quot;))
+tax_rate = Decimal("0.0825")
+tax = (subtotal * tax_rate).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+grand = (subtotal + tax).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
 
-    for it in items:
-        try:
-            price = Decimal(str(it[&quot;price&quot;]))
-            qty = Decimal(str(it[&quot;qty&quot;]))
-        except KeyError:
-            continue
-        line_total = price * qty
-        subtotal += line_total
-        category = it.get(&quot;category&quot;, &quot;uncategorized&quot;)
-        by_category[category] += line_total
-
-    tax_rate = Decimal(&quot;0.0825&quot;)
-    tax = (subtotal * tax_rate).quantize(Decimal(&quot;0.01&quot;), rounding=ROUND_HALF_UP)
-    grand = (subtotal + tax).quantize(Decimal(&quot;0.01&quot;), rounding=ROUND_HALF_UP)
-
-    return {
-        &quot;subtotal&quot;: str(subtotal),
-        &quot;tax&quot;: str(tax),
-        &quot;grand_total&quot;: str(grand),
-        &quot;by_category&quot;: {k: str(v) for k, v in by_category.items()}
-    }
+return {
+    "subtotal": str(subtotal),
+    "tax": str(tax),
+    "grand_total": str(grand),
+    "by_category": {k: str(v) for k, v in by_category.items()}
+}
 </code></pre>
-<p><strong>Commentary:</strong></p>
+<p>```<br />
+<strong>Commentary:</strong></p>
 <ul>
 <li>Converted to Decimal for currency correctness (float can accumulate rounding error).</li>
 <li>defaultdict simplifies accumulation.</li>
-<li>
-<p>Single computation of line_total.  </p>
+<li>Single computation of line_total.  </li>
+</ul>
 </li>
 <li>
 <p>Agent Mode Prompt: “Introduce a pricing module:”</p>
@@ -735,7 +733,7 @@ def compute_totals(items: List[Dict[str, Any]]) -&gt; Dict[str, Any]:
 </li>
 </ul>
 </li>
-</ul>
+</ol>
 <h4 id="interesting-fact-multi-step-agents-often-internally-chain-multiple-edit-like-operations-conceptually-they-reuse-reasoning-loops-youd-manually-perform">Interesting Fact: Multi-step Agents often internally chain multiple “edit-like” operations; conceptually they reuse reasoning loops you’d manually perform.</h4>
 <h2 id="to-overcome-imposter-syndrome-expert-style-embrace-a-growth-mindset">🌱 To overcome Imposter Syndrome Expert-Style embrace a Growth Mindset</h2>
 <ul>
