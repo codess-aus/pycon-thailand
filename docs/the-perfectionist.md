@@ -4,7 +4,7 @@
 
 The Perfectionist strives for flawless code and never feels satisfied. This can slow progress and increase frustration. This person prepares and reherses and redoes their work, continuously iterating in search of perfection. It can be hard to finish a task, because of that feeling in the back of your mind that this is not good enough.  
 
-![Better Coder](assets/BetterGIF.gif)  
+![Better Coder](assets/BetterGIF.gif)
 
 ---
 
