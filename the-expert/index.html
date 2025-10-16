@@ -616,18 +616,28 @@
 <li><strong>Agent Mode</strong> = Delegated Workflow. You define a goal; Copilot plans steps, performs them iteratively, and summarizes progress.</li>
 </ul>
 <h3 id="capabilities-constraints">Capabilities &amp; Constraints</h3>
-<ol>
-<li><strong>Ask Mode</strong></li>
+<ul>
+<li>
+<p><strong>Ask Mode</strong></p>
+<ul>
 <li>Pulls lightweight context: the current file, selection, maybe related symbols.  </li>
 <li>Does NOT alter files directly.  </li>
 <li>Great for: learning, quick utility snippets, performance/complexity questions, API lookups.  </li>
 <li>Safe sandbox for exploratory thinking.</li>
-<li><strong>Edit Mode</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Edit Mode</strong>  </p>
+<ul>
 <li>You highlight code (or invoke at file scope), give an imperative instruction: “Optimize this loop,” “Convert to async,” “Add docstrings.”</li>
 <li>Generates a diff you can accept, partially apply, or reject.</li>
 <li>Promotes incremental, reviewable change.</li>
 <li>Encourages clarity: best prompts are specific about constraints (e.g., “Keep public API the same; improve readability; no external deps”).  </li>
-<li><strong>Agent Mode</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Agent Mode</strong></p>
+<ul>
 <li>Accepts a goal like: “Add JWT auth including middleware, tests, and docs.”</li>
 <li>Can:<ul>
 <li>Inspect multiple files.</li>
@@ -638,7 +648,9 @@
 <li>Sometimes prepare a PR-ready branch (depending on environment).</li>
 <li>Best when the task has multiple dependent steps or requires repository-wide awareness.</li>
 <li>Requires trust but verify: always review each step—especially security-sensitive code.  </li>
-</ol>
+</ul>
+</li>
+</ul>
 <h3 id="example-scenario-python">Example Scenario (Python)</h3>
 <p>Suppose you have this (deliberately naive) function:  </p>
 <pre><code>def compute_totals(items):
