@@ -12,6 +12,7 @@ Experts often set high standards for themselves and fear being seen as less know
 
 > "The more I learn, the more I realize how much I don't know." - Albert Einstein
 
+![Explain it to me](assets/ExpertGif.gif)
 ---
 
 ## 🌱 Growth Mindset
