@@ -88,7 +88,7 @@ def compute_totals(items):
 
 ### How You’d Use Each Mode  
 
-1. Ask Mode Prompt: “Explain time complexity of compute_totals and suggest micro-optimizations - don’t change semantics.” Output: Explanation + maybe suggestion to use defaultdict, avoid duplicated multiplication, consider Decimal for currency.  
+1. Ask Mode Prompt: “Explain time complexity of compute_totals and suggest micro-optimizations - don’t change semantics.” Output: Explanation + maybe suggestion to use `defaultdict`, avoid duplicated multiplication, consider Decimal for currency.  
 
 2. Edit Mode Prompt (select the function): “Refactor for readability, use type hints, minimize repeated multiplication, and use Decimal (assume 2-decimal currency).” Possible Result (diff style):  
     ```
