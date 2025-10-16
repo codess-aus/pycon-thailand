@@ -21,9 +21,7 @@ Experts often set high standards for themselves and fear being seen as less know
 - **Share knowledge with others** - Teaching reinforces your own learning
 - **It's okay to say "I don't know"** - Then add "but let's find out together"
 
-<div class="small-image">
-    <img src="assets/Copilot%20reading.png" alt="Copilot as a Learning Tool">
-</div>
+![Copilot as a Learning Tool](assets/Copilot%20reading.png)
 
 ---
 

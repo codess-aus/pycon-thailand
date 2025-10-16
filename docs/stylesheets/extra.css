@@ -158,7 +158,7 @@ a:hover {
 
 /* Hero images (first image after h1) - smaller, more contained */
 .md-typeset h1 + p img {
-    max-width: 40%;
+    max-width: min(40%, 500px);
     min-width: 250px;
 }
 
@@ -166,7 +166,7 @@ a:hover {
 .md-typeset p img,
 .md-typeset h2 + p img,
 .md-typeset h3 + p img {
-    max-width: 40%;
+    max-width: min(40%, 500px);
     min-width: 250px;
 }
 

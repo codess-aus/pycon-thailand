@@ -37,9 +37,7 @@ Now as I get older, I worry less about what other people think. But I still reme
 - **Celebrate small wins** - Keep a Happiness Jar. Each time something good happens put a keepsake in the jar, or write a note on a brightly coloured postit. I save stickers, tickets, ribbons, buttons, pins, badges - all sorts of little memories.
 - **Remember: You are not alone!** - This affects up to 70% of people
 
-<div class="small-image">
-    <img src="assets/happiness.jpg" alt="Happiness Jar">
-</div>
+![Happiness Jar](assets/happiness.jpg)
 
 ---
 
