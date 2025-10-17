@@ -10,6 +10,8 @@ Imposter Syndrome is the feeling that you don't belong or aren't good enough, ev
 
 Imposter Syndrome is is a psychological phenomenon where people doubt their skills, talents, or accomplishments and have a persistent fear of being exposed as frauds.  
 
+Imposter Syndrome โรคคิดว่าตัวเองไม่เก่ง ไม่มีค่าในสายตา ‘ตัวเอง’
+
 There are five types of imposter syndrome, according to researcher Dr. Valerie Young:  
 
 - **The Perfectionist:** This type involves believing that you could have done better, unless you were absolutely perfect.  
