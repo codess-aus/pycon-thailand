@@ -290,8 +290,26 @@ a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Video styling - Match image styling */
+.md-typeset video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Hero images (first image after h1) - smaller, more contained */
 .md-typeset h1 + p img {
+    max-width: min(40%, 500px);
+    min-width: 250px;
+}
+
+/* Hero videos (first video after h1) - same size as hero images */
+.md-typeset h1 + p video {
     max-width: min(40%, 500px);
     min-width: 250px;
 }
@@ -300,6 +318,14 @@ a:hover {
 .md-typeset p img,
 .md-typeset h2 + p img,
 .md-typeset h3 + p img {
+    max-width: min(40%, 500px);
+    min-width: 250px;
+}
+
+/* Standard content videos - match image sizing */
+.md-typeset p video,
+.md-typeset h2 + p video,
+.md-typeset h3 + p video {
     max-width: min(40%, 500px);
     min-width: 250px;
 }
@@ -329,11 +355,23 @@ a:hover {
     box-shadow: 0 8px 30px rgba(139, 92, 246, 0.3);
 }
 
+.md-typeset video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.3);
+}
+
 /* Ensure images don't break layout on small screens */
 @media (max-width: 768px) {
     .md-typeset img,
     .md-typeset p img,
     .md-typeset h1 + p img {
+        max-width: 100% !important;
+        min-width: 100px;
+    }
+    
+    .md-typeset video,
+    .md-typeset p video,
+    .md-typeset h1 + p video {
         max-width: 100% !important;
         min-width: 100px;
     }
