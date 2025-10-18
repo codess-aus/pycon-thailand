@@ -2,18 +2,13 @@
 
 ![The Expert](assets/expert.jpg)
 
-The Expert feels they must know everything - Python, Devops, Infrastructure as Code, Testing, Security - and be able to answer every question on any topic. This mindset can lead to stress and burnout.
-
-ผู้เชี่ยวชาญ – ประเภทนี้เกี่ยวข้องกับความรู้สึกเหมือนเป็นคนหลอกลวง เพราะคุณไม่รู้ทุกสิ่งทุกอย่างเกี่ยวกับเรื่องหรือหัวข้อหนึ่งๆ
----
+The Expert feels they must know everything - Python, Devops, Infrastructure as Code, Testing, Security - and be able to answer every question on any topic. This mindset can lead to stress and burnout.  
 
 ## 🧠 Why It Happens
 
 Experts often set high standards for themselves and fear being seen as less knowledgeable. They believe they need to know everything before they can contribute or teach others.
 
 > "The more I learn, the more I realize how much I don't know." - Albert Einstein
-
-> "ยิ่งฉันเรียนรู้มากขึ้น ฉันก็ยิ่งตระหนักว่ายังมีอีกมากที่ฉันยังไม่รู้" - อัลเบิร์ต ไอน์สไตน์
 
 With GitHub Copilot if you don't understand how something works, you can just ask it. Depending on which model you choose you will see a more verbose or a more succinct explanation. 
 
@@ -151,9 +146,5 @@ def compute_totals(items):
 - **Share knowledge with others** - Teaching reinforces your own learning
 - **It's okay to say "I don't know"** - Then add "but let's find out together"  
 
-- **โอบรับการเรียนรู้เหมือนการเดินทาง** - มักมีสิ่งใหม่ ๆ ให้ค้นพบเสมอ  
-- **ถามคำถามและขอความช่วยเหลือ** - นั่นคือสัญลักษณ์ของความเข้มแข็ง ไม่ใช่ความอ่อนแอ  
-- **แบ่งปันความรู้กับผู้อื่น** - การสอนช่วยตอกย้ำการเรียนรู้ของตัวเอง  
-- **ไม่เป็นไรที่จะพูดว่า "ฉันไม่รู้"** - แล้วตามด้วย "แต่เรามาค้นหาพร้อมกันเถอะ"  
 
 ## ➡️ Next: [The Perfectionist](the-perfectionist.md)

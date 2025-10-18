@@ -38,8 +38,6 @@ Jia looked at my code for 30 mins and then she said "There is a capital letter i
 
 ## 💪 Moving Forward
 
-![Moving Forward](assets/Picture4.png)
-
 Remember:
 - **You belong here** - Your unique perspective matters
 - **Ask for help** - It's a sign of wisdom, not weakness

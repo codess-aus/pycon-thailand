@@ -2,7 +2,7 @@
 
 ![The Superperson](assets/superperson.jpg)
 
-The Superperson tries to do it all—coding, teaching, leading, and more. This can lead to exhaustion and feeling overwhelmed.
+The Superperson tries to do it all—coding, teaching, leading, family, and more. This can lead to exhaustion and feeling overwhelmed.
 
 ---
 

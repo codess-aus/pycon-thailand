@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <div class="language-toggle">
+      <button 
+        data-lang="en" 
+        class="lang-btn {% if not config.theme.language or config.theme.language == 'en' %}active{% endif %}"
+        onclick="switchLanguage('en')"
+        title="Switch to English">
+        EN
+      </button>
+      <button 
+        data-lang="th" 
+        class="lang-btn {% if config.theme.language == 'th' %}active{% endif %}"
+        onclick="switchLanguage('th')"
+        title="เปลี่ยนเป็นภาษาไทย">
+        TH
+      </button>
+    </div>
+  </div>
+
+  {{ super() }}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    function switchLanguage(lang) {
+      const currentPath = window.location.pathname;
+      let newPath;
+      
+      if (lang === 'th') {
+        // Switch to Thai
+        if (currentPath.startsWith('/th/')) {
+          // Already on Thai path
+          return;
+        } else if (currentPath === '/' || currentPath === '/index.html') {
+          newPath = '/th/';
+        } else {
+          // Remove leading slash and add /th/ prefix
+          newPath = '/th' + currentPath;
+        }
+      } else {
+        // Switch to English
+        if (currentPath.startsWith('/th/')) {
+          // Remove /th prefix
+          newPath = currentPath.replace(/^\/th/, '') || '/';
+        } else {
+          // Already on English path
+          return;
+        }
+      }
+      
+      // Add loading animation
+      document.body.classList.add('language-switching');
+      
+      // Navigate to new path
+      window.location.href = newPath;
+    }
+    
+    // Update active language button based on current path
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPath = window.location.pathname;
+      const enBtn = document.querySelector('[data-lang="en"]');
+      const thBtn = document.querySelector('[data-lang="th"]');
+      
+      if (currentPath.startsWith('/th/')) {
+        enBtn.classList.remove('active');
+        thBtn.classList.add('active');
+      } else {
+        enBtn.classList.add('active');
+        thBtn.classList.remove('active');
+      }
+    });
+  </script>
+{% endblock %}

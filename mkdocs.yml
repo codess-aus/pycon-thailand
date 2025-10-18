@@ -1,6 +1,7 @@
 site_name: "PyCon Thailand Workshop"
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tracking
     - navigation.sections
@@ -12,6 +13,8 @@ theme:
     - content.tabs.link
     - toc.integrate
     - toc.follow
+    - navigation.tabs
+    - navigation.path
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -43,7 +46,40 @@ nav:
   - Key Takeaways: key-takeaways.md
   - Resources: resources.md
   - Contact Page: contact.md
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: th
+          name: ไทย
+          build: true
+          nav_translations:
+            Home: หน้าแรก
+            Imposter Syndrome: ซินโดรมผู้แอบอ้าง
+            The Expert: ผู้เชี่ยวชาญ
+            The Perfectionist: นักสมบูรณ์นิยม
+            The Superperson: ซุปเปอร์เปอร์สัน
+            The Natural Genius: อัจฉริยะโดยธรรมชาติ
+            The Soloist: นักเดี่ยว
+            Key Takeaways: ประเด็นสำคัญ
+            Resources: แหล่งข้อมูล
+            Contact Page: ติดต่อเรา
 extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: ไทย
+      link: /th/
+      lang: th
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/PyConThailand
@@ -51,3 +87,5 @@ extra:
       link: https://pythondiscord.com/
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - stylesheets/language-switcher.js
