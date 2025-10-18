@@ -28,4 +28,6 @@ Thank you for joining the **Overcome Your Imposter Syndrome with GitHub Copilot*
 
 Remember: You are capable, you are learning, and you belong in this community.
 
+![Michelle and Coda](assets/GitHub Michelle (1).png)
+
 **Keep coding! 🐍💜**
