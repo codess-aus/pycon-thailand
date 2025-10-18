@@ -2,7 +2,9 @@
 
 ![The Soloist](assets/soloist.jpg)
 
-The Soloist prefers to work alone and may hesitate to ask for help. Collaboration is key to growth!
+The Soloist prefers to work alone and may hesitate to ask for help. Collaboration is key to growth!  
+
+![Explain](assets/002explain.gif)  
 
 ---
 
