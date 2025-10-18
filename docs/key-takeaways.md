@@ -10,6 +10,8 @@ I asked my grad hire - Jiaranai - to take a look at my code. She said "How come 
 
 I replied "I asked Graeme yesterday. He did the same things I had done, checked the same things, undertook the same troubleshooting... and he couldn't figure it out."  
 
+Graeme was born in the same decade as I was, he went to University in the same country, studied from the same books (a thing we used before the internet existed), we were taught the same troubleshooting methodology so we solve problems in the same way. It means that even though Jia was much less experienced - she might see things differently, solve things differently.
+
 Jia looked at my code for 30 mins and then she said "There is a capital letter in the file path and not in the code."  
 
 *I learnt 3 things that day:*
