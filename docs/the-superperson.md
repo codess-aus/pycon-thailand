@@ -4,7 +4,7 @@
 
 The Superperson tries to do it all—coding, teaching, leading, family, and more. This can lead to exhaustion and feeling overwhelmed.  
 
-![Better Coder Journey](assets/superpython.gif)  
+![Better Coder Journey](assets/security1.png)    
 
 ---
 
