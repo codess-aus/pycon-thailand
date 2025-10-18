@@ -41,10 +41,10 @@ Jia looked at my code for 30 mins and then she said "There is a capital letter i
 ## 💪 Moving Forward
 
 Remember:
-- **You belong here** - Your unique perspective matters
-- **Ask for help** - It's a sign of wisdom, not weakness
-- **Celebrate wins** - Big and small achievements deserve recognition
-- **Keep coding** - Every line of code is progress
+- **You belong here** - Your unique perspective matters  
+- **Ask for help** - It's a sign of wisdom, not weakness  
+- **Celebrate wins** - Big and small achievements deserve recognition  
+- **Keep coding** - Every line of code is progress  
 
 ---
 
