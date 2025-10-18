@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="th" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -77,11 +77,9 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="PyCon Thailand Workshop" class="md-header__button md-logo" aria-label="PyCon Thailand Workshop" data-md-component="logo">
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="หัวข้อ">
+    <a href="/th/" title="PyCon Thailand Workshop" class="md-header__button md-logo" aria-label="PyCon Thailand Workshop" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg>
@@ -138,6 +136,32 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="เลือกภาษา">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/th/assets/readme/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/th/th/assets/readme/" hreflang="th" class="md-select__link">
+              ไทย
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
     
       
       
@@ -149,16 +173,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="ค้นหา" placeholder="ค้นหา" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="ค้นหา">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="ล้าง" aria-label="ล้าง" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -171,7 +195,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            กำลังเริ่มต้นการค้นหา
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -191,6 +215,205 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="แท็บ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  หน้าแรก
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/imposter-syndrome/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ซินโดรมผู้แอบอ้าง
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/the-expert/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ผู้เชี่ยวชาญ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/the-perfectionist/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  นักสมบูรณ์นิยม
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/the-superperson/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ซุปเปอร์เปอร์สัน
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/the-natural-genius/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  อัจฉริยะโดยธรรมชาติ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/the-soloist/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  นักเดี่ยว
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/key-takeaways/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ประเด็นสำคัญ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/resources/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  แหล่งข้อมูล
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/th/contact/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ติดต่อเรา
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -204,12 +427,14 @@
                     
 
 
+  
+
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ตัวนำทาง" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="PyCon Thailand Workshop" class="md-nav__button md-logo" aria-label="PyCon Thailand Workshop" data-md-component="logo">
+    <a href="/th/" title="PyCon Thailand Workshop" class="md-nav__button md-logo" aria-label="PyCon Thailand Workshop" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg>
@@ -227,12 +452,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="/th/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Home
+    หน้าแรก
     
   </span>
   
@@ -249,12 +474,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/imposter-syndrome/" class="md-nav__link">
+      <a href="/th/imposter-syndrome/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Imposter Syndrome
+    ซินโดรมผู้แอบอ้าง
     
   </span>
   
@@ -271,12 +496,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/the-expert/" class="md-nav__link">
+      <a href="/th/the-expert/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Expert
+    ผู้เชี่ยวชาญ
     
   </span>
   
@@ -293,12 +518,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/the-perfectionist/" class="md-nav__link">
+      <a href="/th/the-perfectionist/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Perfectionist
+    นักสมบูรณ์นิยม
     
   </span>
   
@@ -315,12 +540,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/the-superperson/" class="md-nav__link">
+      <a href="/th/the-superperson/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Superperson
+    ซุปเปอร์เปอร์สัน
     
   </span>
   
@@ -337,12 +562,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/the-natural-genius/" class="md-nav__link">
+      <a href="/th/the-natural-genius/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Natural Genius
+    อัจฉริยะโดยธรรมชาติ
     
   </span>
   
@@ -359,12 +584,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/the-soloist/" class="md-nav__link">
+      <a href="/th/the-soloist/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Soloist
+    นักเดี่ยว
     
   </span>
   
@@ -381,12 +606,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/key-takeaways/" class="md-nav__link">
+      <a href="/th/key-takeaways/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Key Takeaways
+    ประเด็นสำคัญ
     
   </span>
   
@@ -403,12 +628,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/resources/" class="md-nav__link">
+      <a href="/th/resources/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Resources
+    แหล่งข้อมูล
     
   </span>
   
@@ -425,12 +650,12 @@
   
   
     <li class="md-nav__item">
-      <a href="/contact/" class="md-nav__link">
+      <a href="/th/contact/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Contact Page
+    ติดต่อเรา
     
   </span>
   
@@ -466,7 +691,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Back to top
+  กลับไปด้านบนสุด
 </button>
         
       </main>
@@ -524,11 +749,64 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "toc.integrate", "toc.follow"], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "toc.integrate", "toc.follow", "navigation.tabs", "navigation.path"], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0e04\u0e31\u0e14\u0e25\u0e2d\u0e01\u0e41\u0e25\u0e49\u0e27", "clipboard.copy": "\u0e04\u0e31\u0e14\u0e25\u0e2d\u0e01", "search.result.more.one": "\u0e2d\u0e35\u0e01\u0e2b\u0e19\u0e36\u0e48\u0e07\u0e43\u0e19\u0e2b\u0e19\u0e49\u0e32\u0e19\u0e35\u0e49", "search.result.more.other": "# \u0e40\u0e1e\u0e34\u0e48\u0e21\u0e40\u0e15\u0e34\u0e21\u0e43\u0e19\u0e2b\u0e19\u0e49\u0e32\u0e19\u0e35\u0e49", "search.result.none": "\u0e44\u0e21\u0e48\u0e1e\u0e1a\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e17\u0e35\u0e48\u0e15\u0e23\u0e07\u0e01\u0e31\u0e19", "search.result.one": "\u0e1e\u0e1a\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e17\u0e35\u0e48\u0e15\u0e23\u0e07\u0e01\u0e31\u0e19", "search.result.other": "\u0e1e\u0e1a # \u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e17\u0e35\u0e48\u0e15\u0e23\u0e07\u0e01\u0e31\u0e19", "search.result.placeholder": "\u0e1e\u0e34\u0e21\u0e1e\u0e4c\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e40\u0e23\u0e34\u0e48\u0e21\u0e04\u0e49\u0e19\u0e2b\u0e32", "search.result.term.missing": "\u0e44\u0e21\u0e48\u0e1e\u0e1a", "select.version": "\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e40\u0e27\u0e2d\u0e23\u0e4c\u0e0a\u0e31\u0e19"}, "version": null}</script>
     
     
+  
       <script src="/assets/javascripts/bundle.f55a23d4.min.js"></script>
       
+        <script src="/stylesheets/language-switcher.js"></script>
+      
     
+  <script>
+    function switchLanguage(lang) {
+      const currentPath = window.location.pathname;
+      let newPath;
+      
+      if (lang === 'th') {
+        // Switch to Thai
+        if (currentPath.startsWith('/th/')) {
+          // Already on Thai path
+          return;
+        } else if (currentPath === '/' || currentPath === '/index.html') {
+          newPath = '/th/';
+        } else {
+          // Remove leading slash and add /th/ prefix
+          newPath = '/th' + currentPath;
+        }
+      } else {
+        // Switch to English
+        if (currentPath.startsWith('/th/')) {
+          // Remove /th prefix
+          newPath = currentPath.replace(/^\/th/, '') || '/';
+        } else {
+          // Already on English path
+          return;
+        }
+      }
+      
+      // Add loading animation
+      document.body.classList.add('language-switching');
+      
+      // Navigate to new path
+      window.location.href = newPath;
+    }
+    
+    // Update active language button based on current path
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPath = window.location.pathname;
+      const enBtn = document.querySelector('[data-lang="en"]');
+      const thBtn = document.querySelector('[data-lang="th"]');
+      
+      if (currentPath.startsWith('/th/')) {
+        enBtn.classList.remove('active');
+        thBtn.classList.add('active');
+      } else {
+        enBtn.classList.add('active');
+        thBtn.classList.remove('active');
+      }
+    });
+  </script>
+
   </body>
 </html>

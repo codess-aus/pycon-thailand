@@ -30,6 +30,114 @@ body {
     background: linear-gradient(135deg, #1e3a8a 0%, #4c1d95 50%, #831843 100%) !important;
 }
 
+/* Improve header text accessibility with high contrast */
+.md-header__title,
+.md-header__button,
+.md-header-nav__button,
+.md-header-nav__topic,
+.md-header__topic {
+    color: #ffffff !important;
+}
+
+.md-tabs__link,
+.md-tabs__link--active {
+    color: #ffffff !important;
+    opacity: 0.9;
+}
+
+.md-tabs__link:hover {
+    color: #ffffff !important;
+    opacity: 1;
+}
+
+.md-tabs__link--active {
+    opacity: 1;
+    font-weight: 600;
+}
+
+/* Navigation items in header */
+.md-nav__item .md-nav__link {
+    color: #ffffff !important;
+}
+
+.md-nav__item .md-nav__link:hover {
+    color: #f3e8ff !important;
+}
+
+/* Search box in header */
+.md-search__input {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Sidebar navigation styling for better visibility */
+.md-nav--primary .md-nav__title {
+    background-color: #8b5cf6 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.md-nav--primary .md-nav__item {
+    border-left: 2px solid transparent;
+}
+
+.md-nav--primary .md-nav__link {
+    color: #1a1a2e !important;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.md-nav--primary .md-nav__link:hover {
+    background-color: rgba(139, 92, 246, 0.1) !important;
+    color: #8b5cf6 !important;
+    border-left-color: #8b5cf6;
+}
+
+.md-nav--primary .md-nav__link--active {
+    background-color: rgba(139, 92, 246, 0.15) !important;
+    color: #8b5cf6 !important;
+    font-weight: 600;
+    border-left: 3px solid #8b5cf6 !important;
+}
+
+/* Dark mode sidebar */
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link {
+    color: #e8e8f0 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link:hover {
+    background-color: rgba(192, 132, 252, 0.15) !important;
+    color: #c084fc !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link--active {
+    background-color: rgba(192, 132, 252, 0.2) !important;
+    color: #c084fc !important;
+    border-left: 3px solid #c084fc !important;
+}
+
+/* Secondary navigation (nested items) */
+.md-nav--secondary .md-nav__link {
+    color: #4b5563 !important;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+    color: #8b5cf6 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link {
+    color: #d1d5db !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link:hover {
+    color: #c084fc !important;
+}
+
 .md-typeset h1 {
     font-weight: 700;
     font-size: 3rem;
@@ -251,4 +359,122 @@ a:hover {
         --md-text-color: WindowText;
         --md-accent-fg-color: Highlight;
     }
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 8px 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+[data-md-color-scheme="slate"] .language-switcher {
+    background: rgba(15, 15, 35, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.language-switcher:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.language-switcher select {
+    background: transparent;
+    border: none;
+    color: var(--md-text-color);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.language-switcher select:hover {
+    background: rgba(139, 92, 246, 0.1);
+}
+
+.language-switcher select option {
+    background: var(--md-primary-bg-color, white);
+    color: var(--md-text-color);
+}
+
+/* Language Toggle Buttons */
+.language-toggle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.language-toggle button {
+    background: transparent;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: var(--md-text-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.language-toggle button:hover {
+    background: rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.6);
+    transform: translateY(-1px);
+}
+
+.language-toggle button.active {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    color: white;
+    border-color: transparent;
+}
+
+.language-toggle button.active:hover {
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+}
+
+/* Flag icons for language buttons */
+.language-toggle button[data-lang="en"]::before {
+    content: "🇺🇸";
+    margin-right: 4px;
+}
+
+.language-toggle button[data-lang="th"]::before {
+    content: "🇹🇭";
+    margin-right: 4px;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .language-switcher {
+        top: 60px;
+        right: 10px;
+        padding: 6px 12px;
+    }
+    
+    .language-toggle button {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
+
+/* Animation for language switch */
+.language-switching {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
