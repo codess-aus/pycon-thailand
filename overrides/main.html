@@ -29,24 +29,32 @@
   <script>
     function switchLanguage(lang) {
       const currentPath = window.location.pathname;
+      const baseUrl = '/pycon-thailand'; // GitHub Pages base URL
       let newPath;
+      
+      // Extract the path after the base URL
+      let relativePath = currentPath;
+      if (currentPath.startsWith(baseUrl)) {
+        relativePath = currentPath.substring(baseUrl.length);
+      }
       
       if (lang === 'th') {
         // Switch to Thai
-        if (currentPath.startsWith('/th/')) {
+        if (relativePath.startsWith('/th/')) {
           // Already on Thai path
           return;
-        } else if (currentPath === '/' || currentPath === '/index.html') {
-          newPath = '/th/';
+        } else if (relativePath === '/' || relativePath === '' || relativePath === '/index.html') {
+          newPath = baseUrl + '/th/';
         } else {
           // Remove leading slash and add /th/ prefix
-          newPath = '/th' + currentPath;
+          newPath = baseUrl + '/th' + relativePath;
         }
       } else {
         // Switch to English
-        if (currentPath.startsWith('/th/')) {
+        if (relativePath.startsWith('/th/')) {
           // Remove /th prefix
-          newPath = currentPath.replace(/^\/th/, '') || '/';
+          const pathWithoutTh = relativePath.replace(/^\/th/, '') || '/';
+          newPath = baseUrl + pathWithoutTh;
         } else {
           // Already on English path
           return;
@@ -66,7 +74,7 @@
       const enBtn = document.querySelector('[data-lang="en"]');
       const thBtn = document.querySelector('[data-lang="th"]');
       
-      if (currentPath.startsWith('/th/')) {
+      if (currentPath.includes('/th/')) {
         enBtn.classList.remove('active');
         thBtn.classList.add('active');
       } else {
